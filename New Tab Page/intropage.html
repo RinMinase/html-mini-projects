@@ -1,0 +1,194 @@
+<html>
+	<head>
+		<title>New Page by Rin Minase</title>
+		<link rel="Shortcut Icon" type="image/ico" href="tray-h-64.png">
+
+		<script type="text/javascript">
+			function FocusOnInput() {
+				document.getElementById("GoogleBar").focus();
+			}
+		</script>
+		
+		<style>
+		body {
+			background-image:url('theme_ntp_background.png');
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-position:left bottom;
+		}
+		
+		#Copyright {
+			position: absolute;
+			right: 12px;
+			bottom: 10px;
+		}
+		
+		#GoogleLogo {
+			text-align:right;
+			position: absolute;
+			right: 100px;
+			top: 20px;
+		}
+		
+		#GoogleSearch {
+			position: absolute;
+			right: 20px;
+			top: 100px;
+		}
+		
+		#GoogleImageLogo {
+			text-align: right;
+			position: absolute;
+			right: 100px;
+			top: 130px;
+		}
+		
+		#GoogleImageSearch {
+			position: absolute;
+			right: 20px;
+			top: 210px;
+		}
+		
+		#NyaaLogo {
+			text-align: right;
+			position: absolute;
+			right: 130px;
+			top: 250px;
+		}
+		
+		#NyaaSearch {
+			position: absolute;
+			right: 20px;		
+			top: 290px;
+		}
+		
+		#MALLogo {
+			text-align: right;	
+			position: absolute;		
+			right: 130px;		
+			top: 330px;
+		}
+		
+		#MALSearch {
+			position: absolute;		
+			right: 20px;		
+			top: 370px;
+		}
+		
+		#BakaBTButton {
+			text-align: right;		
+			position: absolute;		
+			right: 200px;		
+			top: 420px;
+		}
+		
+		#GendouButton {
+			text-align: right;		
+			position: absolute;		
+			right: 40px;		
+			top: 420px;
+		}
+		
+		#FacebookButton {
+			text-align: right;		
+			position: absolute;		
+			right: 200px;		
+			top: 465px;
+		}
+		
+		#YoutubeButton {
+			text-align: right;		
+			position: absolute;		
+			right: 40px;		
+			top: 465px;
+		}
+		</style>
+		
+	</head>
+
+	<!-- background-image:url('theme_ntp_background.png'); background-repeat:no-repeat; background-attachment:fixed; background-position:left bottom; -->
+	
+	<body onload="FocusOnInput()">
+	
+		<!--<img src="theme_ntp_background.png" border="0" width="100%" height="100%" tabindex="-1" />-->
+		
+		<div id="Copyright">
+			<i><font size="2" face="Century Gothic">Made By: Rin Minase of Minase Conglomerate</font><i>
+		</div>
+		
+		<!-- GOOGLE SEARCH -->
+		<div id="GoogleLogo">
+			<a href="http://www.google.com.ph"><img src="google_logo.png" border="0" width="205px" height="85px" /></a>
+		</div>
+
+		<div id="GoogleSearch">
+			<form name="googlesearch" action="https://www.google.com.ph/search">
+				<input name="q" id="GoogleBar" type="text" size="40" placeholder="Google Search by Rin Minase" tabindex="1" />
+				<input type="submit" name="search" value="Search" tabindex="2" />
+			</form>
+		</div>
+		
+		<!-- GOOGLE IMAGE SEARCH -->
+		<div id="GoogleImageLogo">
+			<a href="http://images.google.com"><img src="google_images_logo.png" border="0" width="205px" height="85px" /></a>
+		</div>
+
+		<div id="GoogleImageSearch">
+			<form name="googleimagesearch" action="http://images.google.com/images">
+				<input name="tbm" type="hidden" value="isch" />
+				<input name="sout" type="hidden" value="0" />
+				<input name="sa" type="hidden" value="X" />
+				<input name="q" id="GoogleImageBar" type="text" size="40" placeholder="Google Image Search by Rin Minase" tabindex="3" />
+				<input type="submit" name="search" value="Search" tabindex="4" />
+			</form>
+		</div>
+		
+		<!-- NYAA SEARCH -->
+		<div id="NyaaLogo">
+			<a href="http://www.nyaa.se"><img src="btn_nyaa.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+		<div id="NyaaSearch">
+			<form name="nyaasearch" action="http://www.nyaa.se/">
+				<input name="page" type="hidden" value="search" />
+				<input name="cats" type="hidden" value="1_37" />
+				<input name="filter" type="hidden" value="0" />
+				<input name="term" id="NyaaBar" type="text" size="40" placeholder="Nyaa Search by Rin Minase" tabindex="5" />
+				<input type="submit" name="search" value="Search" tabindex="6" />
+			</form>
+		</div>
+		
+		<!-- MYANIMELIST SEARCH -->
+		<div id="MALLogo">
+			<a href="http://myanimelist.net"><img src="btn_mal.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+		<div id="MALSearch">
+			<form name="malsearch" action="http://myanimelist.net/anime.php">
+				<input name="q" id="MALBar" type="text" size="40" placeholder="MyAnimeList Search by Rin Minase" tabindex="7" />
+				<input type="submit" value="Search" tabindex="8" />
+			</form>
+		</div>
+		
+		<!-- BAKABT BUTTON -->
+		<div id="BakaBTButton">
+			<a href="http://bakabt.me/"><img src="btn_bakabt.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+		<!-- GENDOU BUTTON -->
+		<div id="GendouButton">
+			<a href="http://gendou.com/"><img src="btn_gendou.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+		<!-- FACEBOOK BUTTON -->
+		<div id="FacebookButton">
+			<a href="https://www.facebook.com/"><img src="btn_fb.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+		<!-- YOUTUBE BUTTON -->
+		<div id="YoutubeButton">
+			<a href="https://www.youtube.com/"><img src="btn_youtube.png" border="0" width="150px" height="30px" /></a>
+		</div>
+		
+	</body>
+</html>
